@@ -31,4 +31,5 @@ tcp6       0      0 :::2375                 :::*                    LISTEN      
 
 1. 打开pycharm的settings->project->Project Interpreter->add->docker->new,在Engine API URL填入宿主机的ip:2375
 2. 选择Image name和Python interpreter path(这个需要在你docker容器中安装的python环境，然后可以直接在终端启动进入python)
+3. 提示连接成功，去宿主机用`docker ps -a`可以看到会有一个新的docker容器
 

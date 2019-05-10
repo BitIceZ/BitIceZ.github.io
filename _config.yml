@@ -1,7 +1,7 @@
 # Site settings
 title_left    : "Deep"
 title_right   : "thinking" # default: ""
-description   : "Minimalist Jekyll theme for technical writing blog."
+description   : "Be the change you want to see in the world."
 keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, deepthinking"
 url           : https://panshifu.github.io # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
