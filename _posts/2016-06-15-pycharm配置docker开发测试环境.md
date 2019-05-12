@@ -11,15 +11,17 @@
 
 #### 具体操作
 
-我自己是在windows下的VMware安装了ubuntu16.04
-
 1. 安装docker，官网有说明，然后pull需要用到的镜像
-2. 修改VMware中的宿主机ubuntu， `/lib/systemd/system/docker.service`
-`ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375`
+
+2. VMware中的宿主机ubuntu，**直接通过添加源来安装docker **，在`/lib/systemd/system/docker.service`
+  中添加`ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375`
+
+  **通过snap安装docker**，在`/etc/systemd/system/snap.docker.dockerd.service`添加`ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375`
+
 3. 重启Docker服务
 ```
 systemctl daemon-reload
-systemctl restart docker.service
+systemctl restart docker.service|systemctl restart snap.docker.dockerd.service
 ```
 4. 查看本地端口2375是否开启
 ```
