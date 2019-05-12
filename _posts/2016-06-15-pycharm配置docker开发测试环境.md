@@ -12,8 +12,14 @@
 #### 具体操作
 
 1. 安装docker，官网有说明，然后pull需要用到的镜像
-2. VMware中的宿主机ubuntu，**直接通过添加源来安装docker **,在`/lib/systemd/system/docker.service`
-  中添加`ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375`,**通过snap安装docker**，在`/etc/systemd/system/snap.docker.dockerd.service`添加`ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375`
+
+2. VMware中的宿主机ubuntu，
+
+  **直接通过添加源来安装docker **,在`/lib/systemd/system/docker.service`
+  中添加`ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375`
+
+  **通过snap安装docker**，在`/etc/systemd/system/snap.docker.dockerd.service`添加`ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2375`
+
 3. 重启Docker服务
 ```
 systemctl daemon-reload
