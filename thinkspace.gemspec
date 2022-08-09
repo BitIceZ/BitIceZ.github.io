@@ -1,11 +1,11 @@
 Gem::Specification.new do |spec|
 	spec.name          = "deepthinking"
 	spec.version       = "2.5.0"
-	spec.authors       = ["Eric Pan"]
+	spec.authors       = ["Bitice"]
 	spec.email         = ["panshifu@holycity.xyz"]
 
 	spec.summary       = "A minimalist Jekyll theme"
-	spec.homepage      = "https://github.com/biticez"
+	spec.homepage      = "https://github.com/BitIceZ"
 	spec.license       = "MIT"
 
 	spec.metadata["plugin_type"] = "theme"
