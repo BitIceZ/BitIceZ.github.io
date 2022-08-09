@@ -28,7 +28,7 @@ sass:
 
 # Author settings
 author:
-  name     : "Eric Pan"
+  name     : "Bitice"
 
 plugins:
   - jekyll-sitemap
